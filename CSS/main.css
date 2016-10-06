@@ -1,0 +1,126 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff") format("woff"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7") format("svg");
+}
+#container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background: #c2c2d6;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+#calculator {
+  position: relative;
+  background: black;
+  width: 319px;
+}
+#calculator .button {
+  display: inline-block;
+  position: relative;
+  height: 55px;
+  width: 71px;
+  margin: 3px 0 0 3px;
+  color: white;
+  background: #4d4d4d;
+  font-family: Share Tech Mono, sans;
+  font-size: 20px;
+  cursor: default;
+}
+#calculator .button p {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  bottom: 15px;
+  text-align: center;
+}
+#calculator .button-row div:nth-child(1) {
+  margin-left: 7px;
+}
+#calculator .button:hover {
+  color: black;
+  outline: .5px solid grey;
+}
+#calculator #display {
+  height: 67px;
+  text-align: right;
+  font-family: Digital, monospace;
+  color: white;
+}
+#calculator .screen {
+  position: absolute;
+  right: 7px;
+  max-width: 96%;
+  background: black;
+}
+#calculator #output {
+  height: 30px;
+  top: 11px;
+  font-size: 28px;
+  overflow: hidden;
+  vertical-align: text-top;
+}
+#calculator #formula {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  line-height: 18px;
+  height: 35px;
+  font-size: 19px;
+  color: orange;
+  top: -1px;
+}
+#calculator #formulaError {
+  display: none;
+  font-size: 19px;
+  color: orange;
+  top: -1px;
+}
+#calculator .button-row #AC,
+#calculator .button-row #backspace {
+  background: #ac3939;
+}
+#calculator .button-row #AC:hover,
+#calculator .button-row #backspace:hover {
+  color: #4d1919;
+  outline: 1px solid #cd6565;
+}
+#calculator .button-row #equals {
+  background: #004466;
+}
+#calculator .button-row #equals:hover {
+  outline: 1px solid #0077b3;
+}
+#calculator .button-row .operator,
+#calculator .button-row #negative {
+  background: #666666;
+}
+#calculator .button-row #zero {
+  width: 149px;
+}
+#calculator .button-row #zero,
+#calculator .button-row #point,
+#calculator .button-row #equals {
+  margin-bottom: 3px;
+}
+#footer-material {
+  text-align: center;
+  font-family: Share Tech Mono, sans;
+  margin-top: 15px;
+}
+#footer-material a {
+  text-decoration: none;
+  color: #00264d;
+  line-height: 26px;
+}
